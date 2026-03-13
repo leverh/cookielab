@@ -1,0 +1,109 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.browser {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.browserBar {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dots {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.dots span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border-strong);
+}
+
+.addressBar {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.viewport {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+
+.fakePage {
+  position: absolute;
+  inset: 0;
+}
+
+.fakeNav {
+  height: 36px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.fakeContent {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fakeLine {
+  height: 9px;
+  border-radius: 4px;
+  background: var(--border);
+}
+
+.bannerWrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.corner {
+  left: auto !important;
+  right: 12px !important;
+  bottom: 12px !important;
+  width: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+}
